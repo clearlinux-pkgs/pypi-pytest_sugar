@@ -4,7 +4,7 @@
 #
 Name     : pypi-pytest_sugar
 Version  : 0.9.4
-Release  : 27
+Release  : 28
 URL      : https://files.pythonhosted.org/packages/5d/ca/0e96605e91dff95ce058a704406701d5ab8f5f3a53e8c800e5186290498c/pytest-sugar-0.9.4.tar.gz
 Source0  : https://files.pythonhosted.org/packages/5d/ca/0e96605e91dff95ce058a704406701d5ab8f5f3a53e8c800e5186290498c/pytest-sugar-0.9.4.tar.gz
 Summary  : pytest-sugar is a plugin for pytest that changes the default look and feel of pytest (e.g. progressbar, show tests that fail instantly).
@@ -14,17 +14,14 @@ Requires: pypi-pytest_sugar-license = %{version}-%{release}
 Requires: pypi-pytest_sugar-python = %{version}-%{release}
 Requires: pypi-pytest_sugar-python3 = %{version}-%{release}
 BuildRequires : buildreq-distutils3
-Provides: pytest-sugar
-Provides: pytest-sugar-python
-Provides: pytest-sugar-python3
-BuildRequires : pypi(pluggy)
-BuildRequires : py-python
 BuildRequires : pypi(packaging)
+BuildRequires : pypi(py)
 BuildRequires : pypi(pytest)
 BuildRequires : pypi(termcolor)
-BuildRequires : pytest
-BuildRequires : tox
-BuildRequires : pypi(virtualenv)
+BuildRequires : pypi-pluggy
+BuildRequires : pypi-pytest
+BuildRequires : pypi-tox
+BuildRequires : pypi-virtualenv
 
 %description
 # pytest-sugar
@@ -70,7 +67,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1641482138
+export SOURCE_DATE_EPOCH=1649699832
 export GCC_IGNORE_WERROR=1
 export CFLAGS="$CFLAGS -fno-lto "
 export FCFLAGS="$FFLAGS -fno-lto "
