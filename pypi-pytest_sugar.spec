@@ -4,7 +4,7 @@
 #
 Name     : pypi-pytest_sugar
 Version  : 0.9.5
-Release  : 32
+Release  : 33
 URL      : https://files.pythonhosted.org/packages/e2/d0/b770e5d47794323f06dab98c328c6d25758f4aca015017e709af3d1abee2/pytest-sugar-0.9.5.tar.gz
 Source0  : https://files.pythonhosted.org/packages/e2/d0/b770e5d47794323f06dab98c328c6d25758f4aca015017e709af3d1abee2/pytest-sugar-0.9.5.tar.gz
 Summary  : pytest-sugar is a plugin for pytest that changes the default look and feel of pytest (e.g. progressbar, show tests that fail instantly).
